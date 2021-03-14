@@ -54,7 +54,7 @@ for k in range(1,nsteps+1):
     ax.plot(x[:,0],x[:,1],'o',mfc='#b469ff',mec='#b469ff')
     ax.plot(x[outsqmask,0],x[outsqmask,1],'o',mfc='#9ed9d4',mec='#9ed9d4')
 
-    ax.text(1.1,1.1, r"# points = $10^{%d}$, $\pi = %.3f$" %(k,pi_est),fontsize=20)
+    ax.set_title(r"# points = $10^{%d}$, $\pi = %.3f$" %(k,pi_est),fontsize=40)
 
     plt.tight_layout()
     #plt.show()
